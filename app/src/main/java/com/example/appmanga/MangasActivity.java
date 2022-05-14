@@ -44,7 +44,7 @@ public class MangasActivity extends AppCompatActivity {
     private void carregarMangas(){
         List<Manga>lista= MangaDAO.getMangas(this);
         if(lista.size()==0){
-            Manga fake = new Manga("Nenhum livro cadastrado", "...", null);
+            Manga fake = new Manga("Nenhum Manga cadastrado", "...", null);
             lista.add(fake);
             lvMangas.setEnabled(false);
         }else{

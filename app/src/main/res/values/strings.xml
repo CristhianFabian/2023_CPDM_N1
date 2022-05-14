@@ -2,6 +2,6 @@
     <string name="app_name">AppManga</string>
 
     <string-array name="genero">
-        <item>Selecione o genero...</item>
+        <item>Select the Genere...</item>
     </string-array>
 </resources>
