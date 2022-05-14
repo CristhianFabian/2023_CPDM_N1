@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">AplicativoManga</string>
+    <string name="bt_add">Adicionar</string>
+    <string name="ht_title">Titulo do Manga...</string>
+    <string name="ht_autor">Nome do Autor</string>
+    <string name="bt_save">Salvar</string>
+    <string name="fake_list">Nenhum Manga Cadastrado</string>
 
     <string-array name="genero">
         <item>Selecione o genero...</item>

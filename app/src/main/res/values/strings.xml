@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">AppManga</string>
+    <string name="bt_add">Add</string>
+    <string name="ht_title">Manga Title...</string>
+    <string name="ht_autor">Autor Name</string>
+    <string name="bt_save">Save</string>
+    <string name="fake_list">No Manga Registered</string>
+
 
     <string-array name="genero">
         <item>Select the Genere...</item>
