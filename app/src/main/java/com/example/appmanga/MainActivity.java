@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         spGeneros = findViewById(R.id.spGenero);
         etTitulo = findViewById(R.id.etTitulo);
-        etAutor = findViewById(R.id.etAutor);
+        etAutor = findViewById(R.id.etCap);
         btSalvar = findViewById(R.id.btSalvar);
         btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override

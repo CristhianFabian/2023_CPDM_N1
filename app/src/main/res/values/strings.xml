@@ -5,6 +5,10 @@
     <string name="ht_autor">Autor Name</string>
     <string name="bt_save">Save</string>
     <string name="fake_list">No Manga Registered</string>
+    <string name="ht_cap">Manga cap</string>
+    <string name="tx_complete">Complete</string>
+    <string name="tx_launch">In launch</string>
+
 
 
     <string-array name="genero">

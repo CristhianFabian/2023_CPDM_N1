@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/etTitulo"
-        android:layout_width="289dp"
+        android:layout_width="286dp"
         android:layout_height="46dp"
         android:layout_marginTop="36dp"
         android:ems="10"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etAutor"
+        android:id="@+id/etCap"
         android:layout_width="286dp"
         android:layout_height="46dp"
         android:layout_marginTop="28dp"
@@ -32,24 +32,70 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTitulo" />
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="286dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/ht_cap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCap" />
+
     <Spinner
         android:id="@+id/spGenero"
         android:layout_width="316dp"
         android:layout_height="22dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:entries="@array/genero"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAutor" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="121dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spGenero">
+
+
+        <RadioButton
+            android:id="@+id/rbLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_launch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rbCompleto"
+            app:layout_constraintTop_toBottomOf="@+id/spGenero"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_complete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spGenero" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/btSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="@string/bt_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spGenero" />
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
